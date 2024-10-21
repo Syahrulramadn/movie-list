@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta property="og:title" content="My Movie List" />
+    <meta
+      property="og:description"
+      content="This is my movie list website "
+    />
+    <meta
+      property="og:image"
+      content="{{ url_for('static', filename='ogimage.png') }}"
+    />
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -102,14 +111,13 @@
       .mybtns > button {
         margin-right: 10px;
       }
-        
+
       .card-img-top {
         width: 20rem;
         height: 26rem;
         object-fit: cover;
         max-width: 100%;
       }
-      
 
       /* Media Queries untuk menyesuaikan gambar pada layar kecil */
       @media (max-width: 992px) {
@@ -125,7 +133,8 @@
         }
       }
 
-      .card-text , .mycomment {
+      .card-text,
+      .mycomment {
         text-align: justify;
       }
 
