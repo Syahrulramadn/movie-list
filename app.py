@@ -53,7 +53,7 @@ def movie_post():
 
     db.movies.insert_one(doc)
 
-    return jsonify({'msg':'POST request!'})
+    return jsonify({'msg':'Data berhasil diupload!'})
 
 @app.route("/movie", methods=["GET"])
 def movie_get():
